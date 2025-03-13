@@ -9,7 +9,7 @@ class SiteParser(BaseParser,ProductDetailMixin):
         self.data = {}
 
     def get_data(self):
-        '''Основная функция сбора данных'''
+        
         url = 'https://olcha.uz/ru/category/televizory-audio-i-videotekhnika'
         soup = self.get_soup(self.get_html(url))
         block = soup.find('div',class_='subcategory-list')
